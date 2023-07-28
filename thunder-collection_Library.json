@@ -1,0 +1,358 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Library",
+    "dateExported": "2023-07-28T15:39:20.092Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "43066515-1c35-4d04-b7ca-ace08ce682f9",
+            "name": "gender",
+            "containerId": "",
+            "created": "2023-07-28T14:21:09.738Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "c4cebf68-54fd-47d5-aa76-b958d89a6dca",
+            "name": "publisher",
+            "containerId": "",
+            "created": "2023-07-28T14:58:20.591Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "5323f8c5-89e5-4c2e-8900-8bd8bd59f95c",
+            "name": "author",
+            "containerId": "",
+            "created": "2023-07-28T15:02:33.460Z",
+            "sortNum": 25000
+        },
+        {
+            "_id": "78b183de-82c9-4612-980b-87035f0ea56a",
+            "name": "book",
+            "containerId": "",
+            "created": "2023-07-28T15:25:12.639Z",
+            "sortNum": 35000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9f53f4c7-a92d-4692-803e-68a651108722",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "43066515-1c35-4d04-b7ca-ace08ce682f9",
+            "name": "getAll",
+            "url": "http://localhost:3001/genre",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-28T14:21:18.154Z",
+            "modified": "2023-07-28T14:22:06.039Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e3e9d01d-e878-4d3a-bc66-6e1576cfdb71",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "c4cebf68-54fd-47d5-aa76-b958d89a6dca",
+            "name": "getAll",
+            "url": "http://localhost:3001/publisher",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-28T14:58:20.591Z",
+            "modified": "2023-07-28T14:58:46.399Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7163e394-fedf-4655-bd11-e0b047e7e271",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "5323f8c5-89e5-4c2e-8900-8bd8bd59f95c",
+            "name": "getAll",
+            "url": "http://localhost:3001/publisher",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-28T15:02:33.460Z",
+            "modified": "2023-07-28T15:02:33.460Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8dc11ed4-1d0f-4528-b875-861f846b3560",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "78b183de-82c9-4612-980b-87035f0ea56a",
+            "name": "getAll",
+            "url": "http://localhost:3001/book",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-28T15:25:12.639Z",
+            "modified": "2023-07-28T15:34:24.220Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fd93ba93-48f8-4006-a691-dc0e22a6bbef",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "43066515-1c35-4d04-b7ca-ace08ce682f9",
+            "name": "getById",
+            "url": "http://localhost:3001/genre/5",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-28T14:21:33.113Z",
+            "modified": "2023-07-28T14:32:51.219Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "edb5d981-74df-4f1e-a5af-b797a5346025",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "43066515-1c35-4d04-b7ca-ace08ce682f9",
+            "name": "insert",
+            "url": "http://localhost:3001/genre",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-28T14:22:24.774Z",
+            "modified": "2023-07-28T14:53:31.719Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"xablau\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "52f5bf74-7a19-48ae-85cb-fbdd2b9b3f76",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "c4cebf68-54fd-47d5-aa76-b958d89a6dca",
+            "name": "getById",
+            "url": "http://localhost:3001/publisher/1",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-28T14:58:20.592Z",
+            "modified": "2023-07-28T14:58:59.989Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6014b233-d44d-47e3-8b61-32cc5ebc6c82",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "c4cebf68-54fd-47d5-aa76-b958d89a6dca",
+            "name": "insert",
+            "url": "http://localhost:3001/publisher",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-28T14:58:20.593Z",
+            "modified": "2023-07-28T15:02:05.790Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"ca\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1858d6b8-61a5-4bbd-ac7a-6c5e6a4725b8",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "5323f8c5-89e5-4c2e-8900-8bd8bd59f95c",
+            "name": "getById",
+            "url": "http://localhost:3001/publisher/1",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-28T15:02:33.461Z",
+            "modified": "2023-07-28T15:02:33.460Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "73a7212f-ccba-464f-bed5-aaa3282c8161",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "5323f8c5-89e5-4c2e-8900-8bd8bd59f95c",
+            "name": "insert",
+            "url": "http://localhost:3001/publisher",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-28T15:02:33.462Z",
+            "modified": "2023-07-28T15:02:33.460Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"ca\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8ede5add-1108-4ad1-87fe-68085e240250",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "78b183de-82c9-4612-980b-87035f0ea56a",
+            "name": "getById",
+            "url": "http://localhost:3001/publisher/1",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-28T15:25:12.640Z",
+            "modified": "2023-07-28T15:25:12.639Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "21dcc027-5e31-4360-91b8-c2ec851e57b2",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "78b183de-82c9-4612-980b-87035f0ea56a",
+            "name": "insert",
+            "url": "http://localhost:3001/book",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-28T15:25:12.641Z",
+            "modified": "2023-07-28T15:29:20.789Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"authorId\": 1,\n  \"publisherId\": 1,\n  \"genreId\": 1,\n  \"title\": \"Star Wars: Verily, A New Hope\",\n  \"resume\": \"MAY THE VERSE BE WITH YOU!Return once more to a galaxy far, far away with this sublime retelling of George Lucas's epic Star Wars in the style of the immortal Bard of Avon. The saga of a wise (Jedi) knight and an evil (Sith) lord, of a beautiful princess held captive and a young hero coming of age, Star Wars abounds with all the valor and villainy of Shakespeare's greatest MAY THE VERSE BE WITH YOU\",\n  \"cover\": \"https://books.toscrape.com/media/cache/02/7a/027a1f131d94c38f9e785f5d85a109c7.jpg\",\n  \"price\": 43.30\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e811870c-ffc6-45a5-acd3-949b9bc73b67",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "43066515-1c35-4d04-b7ca-ace08ce682f9",
+            "name": "update",
+            "url": "http://localhost:3001/genre/6",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-07-28T14:23:16.462Z",
+            "modified": "2023-07-28T14:51:34.480Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "556e0607-a7ad-44d3-b610-bcb44c4e2ac0",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "c4cebf68-54fd-47d5-aa76-b958d89a6dca",
+            "name": "update",
+            "url": "http://localhost:3001/publisher/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-07-28T14:58:20.594Z",
+            "modified": "2023-07-28T15:01:57.339Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Facape\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5987e5a2-cfb8-4f2e-91a0-0eb590d850f1",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "5323f8c5-89e5-4c2e-8900-8bd8bd59f95c",
+            "name": "update",
+            "url": "http://localhost:3001/publisher/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-07-28T15:02:33.463Z",
+            "modified": "2023-07-28T15:02:33.460Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Facape\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2ede7162-073e-461a-9e01-179827e1414a",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "78b183de-82c9-4612-980b-87035f0ea56a",
+            "name": "update",
+            "url": "http://localhost:3001/publisher/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-07-28T15:25:12.642Z",
+            "modified": "2023-07-28T15:25:12.639Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Facape\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "41a02340-a613-48fa-be32-f43e0a680d0b",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "43066515-1c35-4d04-b7ca-ace08ce682f9",
+            "name": "remove",
+            "url": "http://localhost:3001/genre/7",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-07-28T14:23:53.339Z",
+            "modified": "2023-07-28T14:53:54.560Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d679794a-881b-4192-b802-53584a1ecf28",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "c4cebf68-54fd-47d5-aa76-b958d89a6dca",
+            "name": "remove",
+            "url": "http://localhost:3001/publisher/3",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-07-28T14:58:20.595Z",
+            "modified": "2023-07-28T15:02:18.900Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9a5fe70d-efab-4724-b4b4-b7aa3f62f73f",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "5323f8c5-89e5-4c2e-8900-8bd8bd59f95c",
+            "name": "remove",
+            "url": "http://localhost:3001/publisher/3",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-07-28T15:02:33.464Z",
+            "modified": "2023-07-28T15:02:33.460Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bea109c3-1751-4adf-b2cf-3ac538c16723",
+            "colId": "36c80d6a-db24-452e-b0d1-4ddb62e1be79",
+            "containerId": "78b183de-82c9-4612-980b-87035f0ea56a",
+            "name": "remove",
+            "url": "http://localhost:3001/publisher/3",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-07-28T15:25:12.643Z",
+            "modified": "2023-07-28T15:25:12.639Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
