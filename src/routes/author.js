@@ -1,43 +1,16 @@
 const express = require('express');
-const model = require('../model/author');
+const service = require('../controllers/author');
 
 const route = express.Router();
 
-route.get('/', async (_req, res) => {
-  const data = await model.findAll()
+route.get('/', service.getAll)
 
-  res.status(200).json(data)
-})
+route.get('/:id', service.getById)
 
-route.get('/:id', async (req, res) => {
-  const { id } = req.params
-  const data = await model.findById(id)
+route.post('/', service.insert)
 
-  res.status(200).json(data)
-})
+route.put('/:id', service.update)
 
-route.post('/', async (req, res) => {
-  const { name } = req.body
-  const insertId = await model.insert(name)
-
-  res.status(201).json({ msg: `item inserido com o id: ${insertId}` })
-})
-
-route.put('/:id', async (req, res) => {
-  const { id } = req.params;
-  const { name } = req.body;
-
-  await model.update({ id, name })
-
-  res.status(200).json({ msg: 'item alterado com sucesso' })
-})
-
-route.delete('/:id', async (req, res) => {
-  const { id } = req.params;
-
-  await model.delete(id)
-
-  res.status(200).json({ msg: 'item deletado com sucesso' })
-})
+route.delete('/:id', service.remove)
 
 module.exports = route

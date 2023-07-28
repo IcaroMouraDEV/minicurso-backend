@@ -1,5 +1,5 @@
 const express = require('express');
-const service = require('../controllers/publisher');
+const service = require('../controllers/book');
 
 const route = express.Router();
 
@@ -9,7 +9,7 @@ route.get('/:id', service.getById)
 
 route.post('/', service.insert)
 
-route.put('/:id', service.update)
+// route.put('/:id', service.update)
 
 route.delete('/:id', service.remove)
 
